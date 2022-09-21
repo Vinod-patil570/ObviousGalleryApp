@@ -4,6 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Vinod/AndroidStudioProjects/ObviousGalleryApp/app/src/main/res/layout/activity_main.xml" value="0.178125" />
+        <entry key="..\:/Users/Vinod/AndroidStudioProjects/ObviousGalleryApp/app/src/main/res/layout/fragment_fullscreen_image.xml" value="0.1921875" />
+        <entry key="..\:/Users/Vinod/AndroidStudioProjects/ObviousGalleryApp/app/src/main/res/layout/fragment_image_grid.xml" value="0.1921875" />
+        <entry key="..\:/Users/Vinod/AndroidStudioProjects/ObviousGalleryApp/app/src/main/res/layout/image_gv_item.xml" value="0.1921875" />
+        <entry key="..\:/Users/Vinod/AndroidStudioProjects/ObviousGalleryApp/app/src/main/res/layout/image_vp_item.xml" value="0.1921875" />
       </map>
     </option>
   </component>

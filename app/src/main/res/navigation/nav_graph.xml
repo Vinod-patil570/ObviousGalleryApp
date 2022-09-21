@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/imageGridFragment">
+
+    <fragment
+        android:id="@+id/imageGridFragment"
+        android:name="com.obvious.galleryapp.ui.fragment.ImageGridFragment"
+        android:label="fragment_image_grid"
+        tools:layout="@layout/fragment_image_grid" >
+        <action
+            android:id="@+id/action_imageGridFragment_to_fullScreenFragment"
+            app:destination="@id/fullScreenImageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fullScreenImageFragment"
+        android:name="com.obvious.galleryapp.ui.fragment.FullScreenImageFragment"
+        android:label="fragment_fullscreen_image"
+        tools:layout="@layout/fragment_fullscreen_image" />
+
+
+</navigation>

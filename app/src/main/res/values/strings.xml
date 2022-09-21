@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ObviousGalleryApp</string>
+    <string name="error_image_list">Sorry, Images not available, Pls try later</string>
+    <string name="my_collections">My Collections</string>
 </resources>
