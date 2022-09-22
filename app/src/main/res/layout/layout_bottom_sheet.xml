@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_8dp"
+        android:background="@drawable/bottom_sheet_rounded_corner">
+
+        <TextView
+            android:id="@+id/tvImageInfoLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_photo_details"
+            android:textAllCaps="true"
+            android:textColor="@color/teal_700"
+            android:textSize="@dimen/dimen_sp_16"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTitleLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/lbl_title_colon"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_sp_14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvImageInfoLbl" />
+
+        <TextView
+            android:id="@+id/tvTitleVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_sp_14"
+            app:layout_constraintStart_toEndOf="@+id/tvTitleLbl"
+            app:layout_constraintTop_toBottomOf="@+id/tvImageInfoLbl"
+            tools:text="XYZ Title" />
+
+        <TextView
+            android:id="@+id/tvDateLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:text="@string/lbl_date_colon"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_sp_14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleLbl" />
+
+        <TextView
+            android:id="@+id/tvDateVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_sp_14"
+            app:layout_constraintLeft_toRightOf="@+id/tvDateLbl"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleVal"
+            tools:text="21 Jan 2022" />
+
+        <TextView
+            android:id="@+id/tvDetailsLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:text="@string/lbl_details_colon"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_sp_14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDateLbl" />
+
+        <TextView
+            android:id="@+id/tvDetailsVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_sp_14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDetailsLbl"
+            tools:text="XYZ Details" />
+
+        <TextView
+            android:id="@+id/tvCopyrightLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:text="@string/lbl_copyright_colon"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_sp_14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDetailsVal" />
+
+        <TextView
+            android:id="@+id/tvCopyrightVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_sp_14"
+            app:layout_constraintLeft_toRightOf="@+id/tvCopyrightLbl"
+            app:layout_constraintTop_toBottomOf="@+id/tvDetailsVal"
+            tools:text="XYZ Copyright" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
+

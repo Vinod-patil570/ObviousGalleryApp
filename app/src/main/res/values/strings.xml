@@ -2,4 +2,10 @@
     <string name="app_name">ObviousGalleryApp</string>
     <string name="error_image_list">Sorry, Images not available, Pls try later</string>
     <string name="my_collections">My Collections</string>
+    <string name="lbl_show_photo_details">Show Photo Details</string>
+    <string name="lbl_photo_details">Photo Details</string>
+    <string name="lbl_date_colon">Date: </string>
+    <string name="lbl_details_colon">Details: </string>
+    <string name="lbl_copyright_colon">Copyright: </string>
+    <string name="lbl_title_colon">Title: </string>
 </resources>

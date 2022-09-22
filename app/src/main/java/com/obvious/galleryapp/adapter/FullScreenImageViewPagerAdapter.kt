@@ -10,6 +10,7 @@ import androidx.viewpager.widget.PagerAdapter
 import com.bumptech.glide.Glide
 import com.example.obviousgalleryapp.model.ImageResponseItem
 import com.obvious.galleryapp.R
+import com.obvious.galleryapp.Utils
 import java.util.*
 
 class FullScreenImageViewPagerAdapter(
@@ -30,7 +31,7 @@ class FullScreenImageViewPagerAdapter(
             context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater?
         val view = layoutInflater?.inflate(R.layout.image_vp_item, container, false)
         val imageView: ImageView = view?.findViewById<View>(R.id.vpImageView) as ImageView
-        Glide.with(context).load(imageList.get(position).hdurl).centerCrop().into(imageView)
+        Glide.with(context).load(imageList.get(position).url).centerCrop().into(imageView)
         Objects.requireNonNull(container).addView(view)
 
 

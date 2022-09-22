@@ -1,4 +1,4 @@
-package com.obvious.galleryapp.ui.fragment
+package com.example.obviousgalleryapp.ui.fragment
 
 import android.content.Context
 import android.os.Bundle
@@ -8,8 +8,10 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.viewpager.widget.ViewPager
 import com.example.obviousgalleryapp.model.ImageResponseItem
 import com.example.obviousgalleryapp.ui.viewmodel.ImageViewModel
+import com.google.gson.Gson
 import com.obvious.galleryapp.adapter.FullScreenImageViewPagerAdapter
 import com.obvious.galleryapp.databinding.FragmentFullscreenImageBinding
+import com.obvious.galleryapp.ui.fragment.BottomSheetDialogFragment
 import dagger.hilt.android.AndroidEntryPoint
 
 
@@ -46,6 +48,7 @@ class FullScreenImageFragment : Fragment() {
         return binding.root
     }
 
+
     /**
      * method to get data from previous fragment
      */
@@ -68,7 +71,14 @@ class FullScreenImageFragment : Fragment() {
      * method to add all click listeners and handle clicks
      */
     private fun addClickListeners() {
-
+        binding.tvShowPhotoDetails.setOnClickListener(View.OnClickListener {
+            val dataJsonString = Gson().toJson(imageList.get(selectedPosition))
+            val bundle = Bundle()
+            bundle.putString("imageData", dataJsonString)
+            val bottomSheetDialog = BottomSheetDialogFragment()
+            bottomSheetDialog.arguments = bundle
+            bottomSheetDialog.show(childFragmentManager, "bottom_sheet_dialog")
+        })
     }
 
     /**
