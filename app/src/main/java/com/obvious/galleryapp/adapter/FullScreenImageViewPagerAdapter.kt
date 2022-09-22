@@ -10,7 +10,6 @@ import androidx.viewpager.widget.PagerAdapter
 import com.bumptech.glide.Glide
 import com.example.obviousgalleryapp.model.ImageResponseItem
 import com.obvious.galleryapp.R
-import com.obvious.galleryapp.Utils
 import java.util.*
 
 class FullScreenImageViewPagerAdapter(
