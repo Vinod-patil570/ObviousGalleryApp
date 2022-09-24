@@ -8,4 +8,6 @@
     <string name="lbl_details_colon">Details: </string>
     <string name="lbl_copyright_colon">Copyright: </string>
     <string name="lbl_title_colon">Title: </string>
+    <string name="lbl_no_internet"><b>Oops! No Internet</b>,\nPlease check your connection</string>
+    <string name="lbl_retry">Retry</string>
 </resources>

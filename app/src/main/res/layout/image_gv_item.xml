@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:background="@color/transp_white_40">
+        android:background="@color/transp_black_40">
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvDate"
@@ -24,8 +24,8 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:padding="@dimen/dimen_4dp"
-            android:textColor="@color/black"
-            android:textSize="@dimen/dimen_sp_11"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_sp_12"
             android:textStyle="bold"
             tools:text="01-01-2020" />
     </RelativeLayout>

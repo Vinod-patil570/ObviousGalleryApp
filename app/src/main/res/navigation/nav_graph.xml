@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/imageGridFragment"
         android:name="com.obvious.galleryapp.ui.fragment.ImageGridFragment"
-        android:label="fragment_image_grid"
+        android:label="Obvious Gallery"
         tools:layout="@layout/fragment_image_grid">
         <action
             android:id="@+id/action_imageGridFragment_to_fullScreenFragment"
@@ -21,9 +21,14 @@
     <fragment
         android:id="@+id/fullScreenImageFragment"
         android:name="com.example.obviousgalleryapp.ui.fragment.FullScreenImageFragment"
-        android:label="fragment_fullscreen_image"
+        android:label="Obvious Gallery"
         tools:layout="@layout/fragment_fullscreen_image">
 
+        <action
+            android:id="@+id/action_fullScreenImageFragment_to_imageGridFragment"
+            app:destination="@id/imageGridFragment"
+            app:popUpTo="@id/imageGridFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 
 </navigation>

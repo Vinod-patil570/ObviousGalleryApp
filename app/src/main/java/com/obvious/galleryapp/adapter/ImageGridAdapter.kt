@@ -1,11 +1,13 @@
 package com.example.obviousgalleryapp.adapter
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.*
+import android.widget.BaseAdapter
+import android.widget.FrameLayout
+import android.widget.ImageView
+import android.widget.TextView
 import com.bumptech.glide.Glide
 import com.example.obviousgalleryapp.model.ImageResponseItem
 import com.obvious.galleryapp.R
@@ -22,7 +24,6 @@ class ImageGridAdapter(
     private lateinit var imageView: ImageView
     private lateinit var parentView: FrameLayout
     private lateinit var tvDate: TextView
-    private lateinit var progressBar: ProgressBar
 
     override fun getCount(): Int {
         return imageList.size
@@ -36,8 +37,6 @@ class ImageGridAdapter(
         return 0
     }
 
-
-    @SuppressLint("SimpleDateFormat")
     override fun getView(position: Int, view: View?, parent: ViewGroup?): View {
         var convertView = view
         if (layoutInflater == null) {

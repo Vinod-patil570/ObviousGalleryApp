@@ -22,5 +22,9 @@
         android:stretchMode="columnWidth"
         android:verticalSpacing="@dimen/dimen_2dp" />
 
+    <include layout="@layout/layout_no_internet"
+        android:id="@+id/layoutNoInternet"
+        android:visibility="gone"/>
+
 
 </RelativeLayout>

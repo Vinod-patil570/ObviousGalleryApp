@@ -32,15 +32,35 @@ class ImageGridFragment : Fragment() {
     lateinit var binding: FragmentImageGridBinding
     lateinit var gvAdapter: ImageGridAdapter
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
         binding = FragmentImageGridBinding.inflate(inflater, container, false)
-        getImages()
-        subscribeImageObserver()
+        checkInternet()
         return binding.root
+    }
+
+    /**
+     * method to check internet and handle the flow accordingly
+     */
+    private fun checkInternet() {
+        if (Utils.isOnline(requireActivity())) {
+            binding.layoutNoInternet.root.visibility = View.GONE
+            binding.tvMyCollection.visibility = View.VISIBLE
+            binding.gvImages.visibility = View.VISIBLE
+            getImages()
+            subscribeImageObserver()
+        } else {
+            binding.layoutNoInternet.root.visibility = View.VISIBLE
+            binding.tvMyCollection.visibility = View.GONE
+            binding.gvImages.visibility = View.GONE
+            binding.layoutNoInternet.btnRetry.setOnClickListener(View.OnClickListener {
+                checkInternet()
+            })
+        }
     }
 
     override fun onAttach(context: Context) {

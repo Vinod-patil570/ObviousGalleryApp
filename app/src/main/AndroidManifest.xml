@@ -4,6 +4,7 @@
     package="com.obvious.galleryapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:name=".MyApplication"
@@ -18,8 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ObviousGalleryApp"
         tools:targetApi="31">
+
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.obviousgalleryapp.ui.activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
