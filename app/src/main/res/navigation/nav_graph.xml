@@ -12,7 +12,11 @@
         tools:layout="@layout/fragment_image_grid">
         <action
             android:id="@+id/action_imageGridFragment_to_fullScreenFragment"
-            app:destination="@id/fullScreenImageFragment" />
+            app:destination="@id/fullScreenImageFragment"
+            app:enterAnim="@anim/enter_anim"
+            app:exitAnim="@anim/exit_anim"
+            app:popEnterAnim="@anim/popenter_anim"
+            app:popExitAnim="@anim/popexit_anim" />
     </fragment>
     <fragment
         android:id="@+id/fullScreenImageFragment"

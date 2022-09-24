@@ -1,11 +1,11 @@
 package com.obvious.galleryapp
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Build
 import android.widget.Toast
 import androidx.swiperefreshlayout.widget.CircularProgressDrawable
 import dagger.Module
-import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import java.text.SimpleDateFormat
@@ -13,6 +13,7 @@ import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.time.format.TextStyle
 import java.util.*
+
 
 @InstallIn(SingletonComponent::class)
 @Module
@@ -46,6 +47,7 @@ class Utils {
         /**
          * method to parse the date in required format
          */
+        @SuppressLint("SimpleDateFormat")
         fun getParsedDate(input: String): String {
             try {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
