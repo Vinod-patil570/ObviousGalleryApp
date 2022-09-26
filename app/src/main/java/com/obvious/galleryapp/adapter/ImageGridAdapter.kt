@@ -14,6 +14,9 @@ import com.obvious.galleryapp.R
 import com.obvious.galleryapp.Utils
 import kotlin.reflect.KFunction2
 
+/**
+ * Adapter class for Image Grid view
+ */
 class ImageGridAdapter(
     private val context: Context,
     private val imageList: List<ImageResponseItem>,

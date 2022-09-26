@@ -12,6 +12,9 @@ import com.example.obviousgalleryapp.model.ImageResponseItem
 import com.obvious.galleryapp.R
 import java.util.*
 
+/**
+ * Adapter class for FullScreen Image viewpager
+ */
 class FullScreenImageViewPagerAdapter(
     private val context: Context,
     private val imageList: List<ImageResponseItem>,

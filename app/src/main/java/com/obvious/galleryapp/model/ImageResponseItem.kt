@@ -1,5 +1,8 @@
 package com.example.obviousgalleryapp.model
 
+/**
+ * Data class for each image item
+ */
 data class ImageResponseItem(
 	val date: String? = null,
 	val copyright: String? = null,

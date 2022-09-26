@@ -20,8 +20,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        /*  val actionBar = supportActionBar
-          actionBar?.setDisplayHomeAsUpEnabled(true)*/
+
+        //Link Appbar to navigation graph
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
         navHostFragment.findNavController().run {

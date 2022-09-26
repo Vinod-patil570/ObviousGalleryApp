@@ -8,7 +8,9 @@ import com.google.gson.reflect.TypeToken
 import com.obvious.galleryapp.Utils
 import javax.inject.Inject
 
-
+/**
+ * Repository class to get data from "Data.Json" raw file
+ */
 class ImageRepository @Inject constructor() {
 
     /**
